@@ -26,11 +26,9 @@ class _MyAppState extends State<MyApp> {
 
   void _changeQuotes() {
     var rand = new Random();
-    if (_quotesIndex < _quotes.length) {
-      setState(() {
-        _quotesIndex = rand.nextInt(_quotes.length);
-      });
-    }
+    setState(() {
+      _quotesIndex = rand.nextInt(_quotes.length);
+    });
   }
 
   @override
